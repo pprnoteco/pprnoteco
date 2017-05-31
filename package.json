@@ -1,20 +1,21 @@
 {
-    "name": "pprnoteco",
-    "version": "0.1.0",
-    "description": "Heroku app: PPR Note Co, LLC",
-    "engines": {
-        "node": "6.10.2"
-    },
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/pprnoteco/pprnoteco"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "express": "^4.15.3"
-    }
+  "name": "pprnoteco",
+  "version": "0.1.0",
+  "description": "Heroku app: PPR Note Co, LLC",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pprnoteco/pprnoteco"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.1"
+  }
 }
