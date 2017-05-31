@@ -1,2 +1,2 @@
 # pprnoteco
-Heroku: PPR Note Co, LLC Application
+Heroku application: PPR Note Co, LLC
