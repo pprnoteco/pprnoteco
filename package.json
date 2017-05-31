@@ -1,0 +1,14 @@
+{
+  "name": "pprnoteco",
+  "version": "0.1.0",
+  "description": "Heroku: PPR Note Co, LLC App",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pprnoteco/pprnoteco"
+  },
+  "license": "MIT"
+}
