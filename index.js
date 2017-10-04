@@ -5,8 +5,11 @@ var port = process.env.PORT || 8080;
 
 app.set('view engine', 'pug');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+app.get('/test', function (req, res) {
+    res.send({
+        response_type: 'in_channel',
+        text: 'Hello world'
+    });
 });
 
 app.get('/slack/lvl10', function (req, res) {
