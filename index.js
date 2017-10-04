@@ -49,6 +49,7 @@ function geocodeRecord (idx, record) {
 app.post('/geocode', function (request, response) {
     
     var address = request.body.text;
+    console.log(address);
     var url = new URL('https://geocoding.geo.census.gov');
     var searchParams = url.searchParams;
     
@@ -57,6 +58,8 @@ app.post('/geocode', function (request, response) {
     searchParams.append('benchmark', 4);
     searchParams.append('vintage'  , 4);
     searchParams.append('format'   , 'json');
+    
+    console.log(url.toString());
     
     https.get(url.toString(), function (res) {
         var content = '';
