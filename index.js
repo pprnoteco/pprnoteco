@@ -2,7 +2,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var app = express();
 
-var URL = require('url').URL;
+var URL = require('url').parse;
 var https = require('https');
 
 var port = process.env.PORT || 8080;
@@ -50,7 +50,7 @@ app.post('/geocode', function (request, response) {
     
     var address = request.body.text;
     console.log(address);
-    var url = new URL('https://geocoding.geo.census.gov');
+    var url = URL('https://geocoding.geo.census.gov');
     var searchParams = url.searchParams;
     
     url.pathname = 'geocoder/geographies/onelineaddress';
